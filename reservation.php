@@ -13,6 +13,8 @@
    <fieldset>
        <legend>Vos réservations</legend>
 
+    <a href="http://localhost/projetPro/commandeProduits.php">Liens vers nos produits</a>
+
        <p><label for="nom">Votre nom ?</label>
        <input type="text" name="nom" id="nom" /></p>
 
@@ -25,11 +27,11 @@
        <p><label for="tel">Votre numéro de téléphone ?</label>
        <input type="tel" name="tel" id="tel" /></p>
 
-       <p><label for="msg">votre commande :</label>
+       <p><label for="msg">Votre réservation :</label>
        <textarea name="msg" id="msg" cols="40" rows="4"></textarea></p>
 
        <p><input type="submit" value="Valider" /></p>
-   </fieldset>
-</form>
+     </fieldset>
+    </form>
   </body>
 </html>

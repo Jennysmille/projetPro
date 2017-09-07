@@ -30,7 +30,7 @@
             <input type='text' name='nom' id='nom' placeholder='Ex : Foie Gras' size='30' maxlength='30' value='" . $donnees['nom'] . "'/>
             <br />
             <label for='prix'>Modifiez son prix en euros :</label>
-            <input type='text' name='prix' id='prix' placeholder='Ex : 30.00' size='30' maxlength='5' value='" . $donnees['prix'] . "'/>
+            <input type='text' name='prix' id='prix' placeholder='Ex : 12.50' size='30' maxlength='5' value='" . $donnees['prix'] . "'/>
             <br />
             <label for='image'>Changez la photo (max 1Mo) :</label>
             <input type='hidden' name='MAX_FILE_SIZE' value='1048576' />

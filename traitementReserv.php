@@ -18,9 +18,14 @@ require_once("./config/connectionBdd.php");
     'tel' => $tel,
     'message' => $message
   ));
+
+  echo  "<p class='produits'>Votre message à bien été envoyé !</p>";
+
+
+
 // }
-// // $reponse->closeCursor(); // Termine le traitement de la requête
+// $reponse->closeCursor(); // Termine le traitement de la requête
 ?>
   <?php
-header('Location:merci.php');
+// header('Location:index.php');
 ?>

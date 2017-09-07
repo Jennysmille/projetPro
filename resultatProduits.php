@@ -14,28 +14,25 @@
     require_once("header.php");
 
     $reponse = $bdd->query('SELECT * FROM produits ORDER BY produits.id DESC ');
-    $plats = $reponse;
+    $produits = $reponse;
      ?>
 
      <div class="texte">
      <h1>Nos produits du moment :</h1>
     	</div>
 
+    <?php
+while($produits = $reponse->fetch())
+{
+    echo "<p id='produits'>Produits : " . $produits['nom'] . " </p>";
+    echo "<p id='produits'>Prix : " . $produits['prix'] . " € </p>";
+    echo "<p id='produits'><Image : " . $produits['image'] . " </p>";
+    echo "<p id='produits'><img src='./assets/img/" . $produits['image'] . "' </p><br />";
 
-     <?php
-  while($produits = $reponse->fetch()) {
+    echo "<a href='updateProduits.php?id=" . $produits['id'] . "'><input type='submit' value='Modifier' class='button' name='id'></a>";
+    echo "<a href='supprimerProduits.php?id=" . $produits['id'] . "'><input type='submit' value='Supprimer' class='button' name='id'></a><br /><br />";
+}
 
-
-     				echo "<p id='produits'>Plat : " . $produits['nom'] . " </p>";
-     				echo "<p id='produits'>Prix : " . $produits['prix'] . " € </p>";
-    				echo "<p id='produits'><Image : " . $produits['image'] . " </p>";
-    				echo "<p id='produits'><img src='./assets/img/" . $produits['image'] . "' </p><br />";
-
-            echo "<a href='updateProduits.php?id=" . $produits['id'] . "'><input type='submit' value='Modifier' class='button' name='id'></a>";
-     				echo "<a href='supprimerProduits.php?id=" . $produits['id'] . "'><input type='submit' value='Supprimer' class='button' name='id'></a><br /><br />";
-          }
-
-    require_once("footer.php");
     ?>
   </body>
 </html>
