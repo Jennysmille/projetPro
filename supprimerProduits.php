@@ -15,7 +15,7 @@
     $idProduits = $_GET['id'];
 
     // On supprime d'abord la relation entre les plats et le menu
-    // On entre dans le champ "id_produits" de la table "jointure_produits" pour supprimer l'ID du produits :
+    // On entre dans le champ "id_produits" de la table "jointure_produits" pour supprimer l'ID du produits 
     $requete = $bdd->prepare('DELETE FROM `jointure_produits` WHERE id_produits = :id_produits');
     $requete->bindParam(':id_produits', $idProduits);
     $requete->execute();

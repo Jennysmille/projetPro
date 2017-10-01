@@ -12,6 +12,8 @@
       <li><a href="http://localhost/projetPro/produits.php">Nos Produits</a></li>
       <li><a href="http://localhost/projetPro/reservation.php">Réservations</a></li>
       <li><a href="http://localhost/projetPro/contact.php">Contact</a></li>
+      <li><a href="http://localhost/projetPro/connexion.php">Se connecter</a></li>
+      <li><a href="http://localhost/projetPro/deconnexion.php">Se déconnecter</a></li>
     </ul>
 </nav>
 </div>

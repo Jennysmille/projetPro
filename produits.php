@@ -107,24 +107,24 @@
 
 
     <!-- formulaire permettant de choisir un produit -->
-
+    <!-- formulaire pas activer en utilisateur réserver à admin -->
     <div class="produits">
-      <form method="post" action="traitementProduits.php" enctype="multipart/form-data">
-         <p>
-           <label for="nom">Entrez le nom de votre produit :</label>
-              <input type="text" name="nom" id="nom" placeholder="Ex : Foie gras" size="30" maxlength="30" value="" />
-             <br />
-             <label for="prix">Entrez son prix en euros :</label>
-             <input type="text" name="prix" id="prix" placeholder="Ex : 12.50" size="30" maxlength="5" value=""/>
-             <br />
-             <label for="image">Ajoutez une photo (max 1Mo) :</label>
-             <input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
-             <input type="file" name="image" id="image"/>
-          </p>
-          
-        <input type="submit" name="envoyer" value="Envoyer" class="button"/>
-      </form>
-    </div>
-  </fieldset>
-  </body>
-</html>
+         <form method="post" action="traitementProduits.php" enctype="multipart/form-data">
+            <p>
+              <label for="nom">Entrez le nom de votre produit :</label>
+                 <input type="text" name="nom" id="nom" placeholder="Ex : Foie gras" size="30" maxlength="30" value="" />
+                <br />
+                <label for="prix">Entrez son prix en euros :</label>
+                <input type="text" name="prix" id="prix" placeholder="Ex : 12.50" size="30" maxlength="5" value=""/>
+                <br />
+                <label for="image">Ajoutez une photo (max 1Mo) :</label>
+                <input type="hidden" name="MAX_FILE_SIZE" value="1048576" />
+                <input type="file" name="image" id="image"/>
+             </p>
+
+           <input type="submit" name="envoyer" value="Envoyer" class="button"/>
+         </form>
+       </div>
+     </fieldset>
+     </body>
+   </html>

@@ -21,9 +21,6 @@ require_once("./config/connectionBdd.php");
 
   echo  "<p class='produits'>Votre message à bien été envoyé !</p>";
 
-
-
-// }
 // $reponse->closeCursor(); // Termine le traitement de la requête
 ?>
   <?php

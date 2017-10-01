@@ -31,7 +31,7 @@ if ($image_sizes[0] > $maxwidth OR $image_sizes[1] > $maxheight) $erreur = "Imag
  if ($resultat) echo "Transfert réussi";
 
 
-// On ajoute une entrée dans la table menus
+// On ajoute une entrée dans la table produits
 $req = $bdd->prepare('INSERT INTO produits(nom, prix, image) VALUES(:nom, :prix, :image)');
 $req->execute(array(
 	'nom' => $nom,
