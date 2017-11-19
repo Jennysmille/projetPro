@@ -10,28 +10,51 @@
     <?php require_once("header.php"); ?>
 
     <form method="post" action="traitementReserv.php" enctype="multipart/form-data">
-   <fieldset>
-       <legend>Vos réservations</legend>
+       <div class="container">
+         <div class="row">
+         <div class="col-sm-12">
+           <h2 class="title-page">Vos réservations</h2>
+            <hr>
+                <a href="http://localhost/projetPro/commandeProduits.php">Liens vers nos produits</a><br>
+            <hr>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <p>Votre nom :</p>
+                <input type="text" name="nom" id="nom" placeholder="Votre nom">
+              </div>
 
-    <a href="http://localhost/projetPro/commandeProduits.php">Liens vers nos produits</a>
+              <div class="form-group">
+                <p>Votre prénom :</p>
+                <input type="text" name="prenom" id="prenom" placeholder="Votre prénom">
+              </div>
 
-       <p><label for="nom">Votre nom ?</label>
-       <input type="text" name="nom" id="nom" /></p>
+              <div class="form-group">
+                <p>Votre e-mail :</p>
+                <input type="email" name="email" id="email" placeholder="Votre email">
+              </div>
+            </div><br>
 
-       <p><label for="prenom">Votre prénom ?</label>
-       <input type="text" name="prenom" id="prenom" /></p>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <p>Votre téléphone :</p>
+                <input type="tel" name="tel" id="tel" placeholder="Votre téléphone">
+              </div>
+              </div>
 
-       <p><label for="email">Votre e-mail ?</label>
-       <input type="email" name="email" id="email" /></p>
+              <div class="row">
+              <div class="col-sm-6">
+              <div class="form-group">
+                <p>Votre réservation :</p>
+                <textarea name="msg" id="msg"></textarea>
+              </div>
+            </div><br>
 
-       <p><label for="tel">Votre numéro de téléphone ?</label>
-       <input type="tel" name="tel" id="tel" /></p>
+              <div class="form-group">
+            <input type="submit" value="Valider">
+          </div>
 
-       <p><label for="msg">Votre réservation :</label>
-       <textarea name="msg" id="msg" cols="40" rows="4"></textarea></p>
-
-       <p><input type="submit" value="Valider" /></p>
-     </fieldset>
+        </div>
+      </div>
     </form>
-  </body>
+</body>
 </html>

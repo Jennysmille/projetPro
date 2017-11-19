@@ -14,12 +14,12 @@ if(isset($_POST['forminscription'])) {
       if($pseudolength <= 255) {
          if($mail == $mail2) {
             if(filter_var($mail, FILTER_VALIDATE_EMAIL)) {
-               $reqmail = $bdd->prepare("SELECT * FROM membres WHERE mail = ?");
+               $reqmail = $bdd->prepare("SELECT * FROM admins WHERE mail = ?");
                $reqmail->execute(array($mail));
                $mailexist = $reqmail->rowCount();
                if($mailexist == 0) {
                   if($mdp == $mdp2) {
-                     $insertmbr = $bdd->prepare("INSERT INTO membres(pseudo, mail, motdepasse) VALUES(?, ?, ?)");
+                     $insertmbr = $bdd->prepare("INSERT INTO admins (pseudo, mail, motdepasse) VALUES(?, ?, ?)");
                      $insertmbr->execute(array($pseudo, $mail, $mdp));
 
                   } else {
@@ -41,6 +41,6 @@ if(isset($_POST['forminscription'])) {
       $erreur = "Tous les champs doivent être complétés !";
    }
 }
-echo  "<p>Votre compte a bien été crée!</p>";
+echo  "<p>Votre compte a bien été crée !</p>";
 ?>
 <a href="connexion.php">Se connecter</a>

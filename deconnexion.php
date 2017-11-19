@@ -1,7 +1,8 @@
 <?php
+// On se connecte a la base de données.
+require_once("./config/connectionBdd.php");
 session_start();
 $_SESSION = array();
 session_destroy();
-echo  "<p>Vous êtes déconnecter!</p>";
+header('Location: login.php');
 ?>
-<a href="connexion.php">Se connecter</a>
