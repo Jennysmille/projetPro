@@ -76,7 +76,7 @@ if (isset($_POST['formconnect']))
               </form>
               <?php
               if(isset($erreur)) {
-                 echo '<font color="red">'.$erreur."</font>";
+                 echo '<font color="white">'.$erreur."</font>";
               }
               ?>
             </div>

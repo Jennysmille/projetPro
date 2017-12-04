@@ -34,5 +34,7 @@ while($produits = $reponse->fetch())
 }
 
     ?>
+
+
   </body>
 </html>

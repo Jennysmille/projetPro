@@ -116,14 +116,14 @@ if (isset($_POST['forminscription']))
                   <p>Répétez votre mot de passe</p>
                   <input type="password" name="mdp2" class="form-control" placeholder="Répétez votre mot de passe" id="mdp2">
                 </div><br>
-                
+
                 <div class="form-group">
                   <input type="submit" name="forminscription" class="btn btn-success btn-lg btn-block" value="Je m'inscris">
                 </div>
               </form>
               <?php
               if(isset($erreur)) {
-                 echo '<font color="red">'.$erreur."</font>";
+                 echo '<font color="white">'.$erreur."</font>";
               }
               ?>
             </div>
